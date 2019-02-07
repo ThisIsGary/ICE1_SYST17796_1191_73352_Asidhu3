@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+/* @modifier: Vishwa Patel*/
 package ca.sheridancollege.week3.softwarefundamentals.ice1;
 
 /**
@@ -21,7 +17,8 @@ public class Card {
    private int value;//1-13
 
    public static final String [] SUITS = {"Hearts", "Diamonds", "Spades", "Clubs"};
-    /**
+   public static final String [] VALUES =  {"1","2","3","4","5","6","7","8","9","10","11","12","13"};
+  /**
      * @return the suit
      */
     public String getSuit() {
@@ -47,7 +44,5 @@ public class Card {
      */
     public void setValue(int value) {
         this.value = value;
-    }
-   
-    
+    }   
 }
