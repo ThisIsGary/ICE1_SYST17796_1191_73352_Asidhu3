@@ -30,7 +30,7 @@ public class CardTrick {
             //c.setValue(insert call to random number generator here)
             c.setValue(randomNumber(13));
             //c.setSuit(Card.SUITS[insert call to random number between 0-3 here])
-            c.setSuit(Card.SUITS[randomNumber(3)]);
+            c.setSuit(Card.SUITS[randomNumber(4) - 1]);
             //add the card to the magicHand array
             magicHand[i] = c;
         }
@@ -41,8 +41,8 @@ public class CardTrick {
         System.out.println("Please select a suit: ");
         System.out.println("[0] Hearts");
         System.out.println("[1] Diamonds");
-        System.out.println("[1] Spades");
-        System.out.println("[1] Clubs");
+        System.out.println("[2] Spades");
+        System.out.println("[3] Clubs");
         selectedSuit = input.nextInt();
 
         // and search magicHand here
