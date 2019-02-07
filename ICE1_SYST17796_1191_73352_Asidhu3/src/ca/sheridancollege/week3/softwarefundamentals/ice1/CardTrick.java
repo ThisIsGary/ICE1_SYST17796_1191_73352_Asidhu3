@@ -24,9 +24,12 @@ public class CardTrick {
 
         Card[] magicHand = new Card[7];
 
+        // Create the luckyCard object
         Card luckyCard = new Card();
         luckyCard.setSuit(Card.SUITS[0]);
         luckyCard.setValue(11);
+
+        // Print the lucky card value and suit
         System.out.println("The lucky card is: " + luckyCard.getValue() + " of " + luckyCard.getSuit());
         
         for (int i=0; i<magicHand.length; i++)
