@@ -23,6 +23,11 @@ public class CardTrick {
         int matchCount = 0;
 
         Card[] magicHand = new Card[7];
+
+        Card luckyCard = new Card();
+        luckyCard.setSuit(Card.SUITS[0]);
+        luckyCard.setValue(11);
+        System.out.println("The lucky card is: " + luckyCard.getValue() + " of " + luckyCard.getSuit());
         
         for (int i=0; i<magicHand.length; i++)
         {
