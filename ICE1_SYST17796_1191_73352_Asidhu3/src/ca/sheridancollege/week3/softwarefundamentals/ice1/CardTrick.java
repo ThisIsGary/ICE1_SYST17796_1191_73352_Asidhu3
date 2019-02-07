@@ -24,7 +24,6 @@ public class CardTrick {
         Card luckyCard = new Card();
         luckyCard.setValue(5);
         luckyCard.setSuit(Card.SUITS[1]);
-        
 
         for (int i = 0; i < magicHand.length; i++) {
             Card c = new Card();
@@ -80,6 +79,11 @@ public class CardTrick {
             }
 
         }
+        
+        System.out.println();
+        
+        System.out.println("Lucky card is: " + luckyCard.getValue() + "," 
+        + luckyCard.getSuit());
 
         //insert code to ask the user for Card value and suit, create their card
         // and search magicHand here
