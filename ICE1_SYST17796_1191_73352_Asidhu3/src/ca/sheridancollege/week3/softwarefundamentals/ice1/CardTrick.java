@@ -23,6 +23,7 @@ public class CardTrick {
         Card luckyCard = new Card();
         luckyCard.setSuit("Clubs");
         luckyCard.setValue(5);
+        System.out.println("lucky Card = "+luckyCard.toString());
         Card[] magicHand = new Card[7];
 
         for (int i = 0; i < magicHand.length; i++) {
