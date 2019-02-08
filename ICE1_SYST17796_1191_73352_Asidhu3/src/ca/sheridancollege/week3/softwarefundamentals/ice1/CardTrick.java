@@ -70,6 +70,10 @@ public class CardTrick {
             }
         }
         //Then report the result here
+        
+        Card luckyCard = new Card();
+        luckyCard.setValue(10);
+        luckyCard.setSuit("Spades");
     }
 
 }
