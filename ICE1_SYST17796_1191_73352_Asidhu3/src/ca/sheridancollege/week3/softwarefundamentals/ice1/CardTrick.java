@@ -22,6 +22,7 @@ public class CardTrick {
         Card[] magicHand = new Card[7];
         Random rnd = new Random();
         Card luckyCard = new Card(10,"Spades");
+        System.out.println("luckyCard is: " + luckyCard.getSuit() +" " + luckyCard.getValue());
         for (int i=0; i<magicHand.length; i++)
         {
             Card c = new Card();
