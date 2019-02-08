@@ -83,7 +83,9 @@ public class CardTrick {
         else if(check==0)
             System.out.println("Not Found!");
         
-     
+     Card luckyCard= new Card(); 
+     luckyCard.setValue(10);
+     luckyCard.setSuit("Diamonds");
         //check - this is a new branch//
     }
     
