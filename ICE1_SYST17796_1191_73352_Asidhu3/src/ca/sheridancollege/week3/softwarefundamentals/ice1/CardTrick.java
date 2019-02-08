@@ -20,16 +20,17 @@ public class CardTrick {
         Card[] magicHand = new Card[7];
         int cardno[]=new int[7];
         String suit[]=new String[7];
+        Card c = new Card();
         for (int i=0; i<magicHand.length; i++)
         {
-            Card c = new Card();
+            
             no=(int)(Math.random()*13+1);
             c.setValue(no);
             cardno[i]=c.getValue();
             a=(int)Math.random()*3;
             c.setSuit(Card.SUITS[a]);
             suit[i]=c.getSuit();
-            System.out.println("Card number is :"+cardno[i]+" and suit is"+suit[i]);
+            System.out.println("Card number is :"+cardno[i]+" and suit is "+suit[i]);
             //c.setValue(insert call to random number generator here)
             //c.setSuit(Card.SUITS[insert call to random number between 0-3 here])
         }
@@ -37,7 +38,7 @@ public class CardTrick {
         System.out.println("Enter card value");
         int value=k.nextInt();
         System.out.println("Enter suit");
-        String Suit=k.nextLine();
+        String Suit=k.next();
         
         for(int i=0;i<cardno.length;i++){
             if(value==cardno[i])
