@@ -86,6 +86,7 @@ public class CardTrick {
      Card luckyCard= new Card(); 
      luckyCard.setValue(10);
      luckyCard.setSuit("Diamonds");
+     System.out.println("lucky card is: " + luckyCard.getValue() +" " + luckyCard.getSuit()); 
         //check - this is a new branch//
     }
     
