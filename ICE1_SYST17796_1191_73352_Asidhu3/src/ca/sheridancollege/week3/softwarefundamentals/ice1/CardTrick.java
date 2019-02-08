@@ -22,12 +22,23 @@ public class CardTrick
         Scanner sc1 = new Scanner(System.in);
         System.out.println("Enter suit:");
         String s1 = sc1.nextLine();
+        
+        //************Luckey card********//
+        Scanner s = new Scanner(System.in);
+        System.out.println("\nEnter number of luckey card : ");
+        int lcNum = s.nextInt();
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter suit for luckey card : ");
+        String lcSuit = input.next();
+        
         int value, suit;
         Card[] magicHand = new Card[7];
         Card luckeyCard = new Card();
-        int lcNum = 7;
-        String lcSuit = "Hearts";
+       
+        luckeyCard.setValue(lcNum);/*set number for luckey card*/
         
+        luckeyCard.setSuit(lcSuit);//set suit for luckey card
+       
         Card c = new Card();
         int[] value1 = new int[7];
         String[] suit1 = new String[7];
@@ -62,15 +73,20 @@ public class CardTrick
         }
         if(isValue == 1 && isSuit == 1)
         {
-            System.out.println("You Win!!");
+            System.out.println("\n **** You Win!! ****");
         }
         else
         {
-            System.out.println("Try Again!!");
+            System.out.println("\n **** Try Again!! ****");
         }
+        
+        //Display result of luckey card**
+        System.out.println("\n Number of luckey card : "+luckeyCard.getValue());
+        System.out.println("\n Suit of luckey card : " + luckeyCard.getSuit());
+       
         //insert code to ask the user for Card value and suit, create their card
         // and search magicHand here
         //Then report the result here
-       
-  }
+        
+    }
 }
