@@ -62,8 +62,8 @@ public class CardTrick {
        Card luckyCard  = new Card();
         luckyCard.setValue(1);
         luckyCard.setSuit("clubs");
-        System.out.prinltn("ur lucky card :"+luckyCard.getValue()+ " of "+luckyCard.getSuit());
-       //LuckyCard fourSpade = new LuckyCard();
+        System.out.print("ur lucky card :"+luckyCard.getValue()+ " of "+luckyCard.getSuit());
+        //lucky  card is 1 and clubs
         
         //insert code to ask the user for Card value and suit, create their card
         // and search magicHand here
