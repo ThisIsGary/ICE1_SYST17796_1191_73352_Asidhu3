@@ -23,7 +23,6 @@ public class CardTrick {
         Card c = new Card();
         for (int i=0; i<magicHand.length; i++)
         {
-            
             no=(int)(Math.random()*13+1);
             c.setValue(no);
             cardno[i]=c.getValue();
