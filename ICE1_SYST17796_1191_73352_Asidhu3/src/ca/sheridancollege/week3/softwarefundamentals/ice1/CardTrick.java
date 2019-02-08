@@ -17,11 +17,11 @@ public class CardTrick {
   
     public static void main(String[] args)
     {
-        Card[] magicHand = new Card[7];
+        LuckyCard[] magicHand = new LuckyCard[7];
         
         for (int i=0; i<magicHand.length; i++)
         {
-            Card c = new Card(); 
+            LuckyCard c = new LuckyCard(); 
             Scanner one = new Scanner(System.in);
              System.out.println("Enter card number and suits: ");
                 int num  = one.nextInt();
@@ -46,9 +46,10 @@ public class CardTrick {
     
         System.out.println("Enter a card to be searched  :");
         Scanner two = new Scanner(System.in);
-        Card[] b = new Card[1];
+        LuckyCard[] b = new  LuckyCard[1];
         int num1 = two.nextInt();
         String suits1 = two.next();
+      b[i] = [num1 suits1];
          if(b==magicHand){
              System.out.println("cards exists in the magicHands");
              
