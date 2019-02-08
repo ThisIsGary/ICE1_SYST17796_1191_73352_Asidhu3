@@ -24,6 +24,9 @@ public class CardTrick
         String s1 = sc1.nextLine();
         int value, suit;
         Card[] magicHand = new Card[7];
+        Card luckeyCard = new Card();
+        int lcNum = 7;
+        String lcSuit = "Hearts";
         
         Card c = new Card();
         int[] value1 = new int[7];
